@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Include your JavaScript file -->
+    <script src="script.js" defer></script> <!-- defer ensures script runs after DOM is loaded -->
+    <!-- Include CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"></div>
+        <div class="description">
+            This dashboard visualizes weather data for the city of Atlanta from 2020 to 2022.
+        </div>
+        <!-- Visualization containers -->
+        <div class="grid-container">
+            <div id="visualization1" class="grid-item">
+                <h2>Monthly Temperature Min/Max</h2>
+                <div id="atlanta-container" class="image-container"></div>
+                <img src="atl.png" alt="Atlanta Image">
+            </div> <!-- Container 1 -->
+            
+            <div id="popup-container"></div>
+            
+            <div id="visualization2" class="grid-item">
+                <h2>Monthly Wind Speed and Visibility</h2>
+            </div> <!-- Container 2 -->
+            
+            <div id="visualization3" class="grid-item">
+                <h2>Daily Weather Conditions</h2>
+                
+            </div> <!-- Container 3 (small) -->
+            <button id="sun-button">Sun</button>
+<button id="rain-button">Rain</button>
+<button id="drizzle-button">Drizzle</button>
+<button id="snow-button">Snow</button>
+        </div> <!-- Grid container -->
+    </div> <!-- Container -->
+</body>
+</html>
